@@ -2,6 +2,13 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  user-select: none; /* Prevents text selection on the entire page */
+}
+
+a {
+  user-select: auto; /* Allows text selection for links */
+}
   .navbar{
   height: 150px;
   width:100%;
