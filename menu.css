@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+}
+.box{
+  text-align: center;
+  font-size: 15px;
+  border: 2px solid black;
+  height: 400px;
+  width: 50%;
+  background-color: rgba(38,71,116,255);
+}
+.box2{
+  margin-left: 90%;
+}
+li{
+  font-size: 1.3rem;
+  margin: 40px;
+  list-style: none;
+}
+a{
+  color: black;
+}
