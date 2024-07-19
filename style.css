@@ -32,7 +32,7 @@ a {
   width: 100%;
 }
 label{
-  display:flex;
+  display: flex;
 }
 .search-input{
   font-size: 25px;
