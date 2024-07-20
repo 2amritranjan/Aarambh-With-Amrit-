@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  text-align: center;
+  length: 100%;
+}
+div{
+  background-color: rgba(38,71,116,255);
+}
+.header{
+  height: 150px;
+  width:100%;
+}
+.home{
+  margin-right: 90%;
+}
+input{
+  font-size: 25px;
+  height: 40px;
+  width: 50%;
+  border-color: black;
+  border-radius: 2rem;
+}
+select{
+  font-size: 25px;
+  height: 40px;
+  width: 50%;
+  border-color: black;
+  border-radius: 2rem;
+}
+.required:after{
+  content: " *";
+  color: red;
+}
