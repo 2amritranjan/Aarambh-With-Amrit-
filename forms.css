@@ -6,10 +6,8 @@ body{
   text-align: center;
   length: 100%;
 }
-div{
-  background-color: rgba(38,71,116,255);
-}
 .header{
+  background-color: rgba(38,71,116,255);
   height: 150px;
   width:100%;
 }
@@ -33,4 +31,51 @@ select{
 .required:after{
   content: " *";
   color: red;
+}
+label{
+  margin: 10px:
+}
+.otpbox{
+  margin: 70px;
+  display: flex;
+  justify-content: center;
+}
+.box1, .box2, .box3, .box4, .box5{
+  text-align: center;
+}
+.box1:hover{
+  background-color: lightgray;
+  border-radius: 10px;
+  box-shadow: 3px 8px 5px rgba(1, 1, 0.5, 0.5);
+  transition: all 0.3s ease;
+}
+.box2:hover{
+  background-color: lightgray;
+  border-radius: 10px;
+  box-shadow: 3px 8px 5px rgba(1, 1, 0.5, 0.5);
+  transition: all 0.3s ease;
+}
+.box3:hover{
+  background-color: lightgray;
+  border-radius: 10px;
+  box-shadow: 3px 8px 5px rgba(1, 1, 0.5, 0.5);
+  transition: all 0.3s ease;
+}
+.box4:hover{
+  background-color: lightgray;
+  border-radius: 10px;
+  box-shadow: 3px 8px 5px rgba(1, 1, 0.5, 0.5);
+  transition: all 0.3s ease;
+}
+.box5:hover{
+  background-color: lightgray;
+  border-radius: 10px;
+  box-shadow: 3px 8px 5px rgba(1, 1, 0.5, 0.5);
+  transition: all 0.3s ease;
+}
+.click:hover{
+  background-color: lightgray;
+  border-radius: 10px;
+  box-shadow: 3px 8px 5px rgba(1, 1, 0.5, 0.5);
+  transition: all 0.3s ease;
 }
