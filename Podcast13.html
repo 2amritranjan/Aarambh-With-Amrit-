@@ -14,7 +14,8 @@
 <body>
   <header><nav class="navbar">
     <div class="left">
-        <a href="menu.html"><i class="fa-sharp fa-solid fa-bars fa-2xl"></i></a>
+      <div class="more">
+        <i class="fa-sharp fa-solid fa-bars fa-2xl"></i></div>
     </div>
     <div class="center">
           <input id="search-input" placeholder="Hungary for podcasts? Find more..."class="search-input">
@@ -26,6 +27,24 @@
             </label>
           </div>
   </header>
+
+<div id="menuModal" class="menuModal">
+    <div class="modal-content">
+    <div class="box">
+  <div class="box2"><a href="forms.html"><button class="sign-in">Login</button></a>
+    <div class="box3"><button class="back"><i class="fa-regular fa-circle-xmark"></i></button></div>
+  </div>
+  <ul><b>
+    <li><i class="fa-solid fa-user"></i><a href="  ">  Profile   ></a></li>
+    <li><i class="fa-solid fa-sliders"></i><a href="  ">  Settings   ></a></li>
+    <li><i class="fa-solid fa-arrow-down-long"></i><a href=" ">  Downloads   ></a></li>
+    <li><i class="fa-solid fa-chart-line"></i><a href=" ">  Creator Corner   ></a></li>
+    <li><i class="fa-solid fa-unlock-keyhole"></i><a href=" ">  Try Pro   ></a></li>
+    <li> </li>
+  </b>
+      </ul>
+</div></div></div>
+  
     <div class="image-container">
     <img src="coverPhoto.jpg" class=" image">
       </div>
@@ -56,4 +75,23 @@ Gmail:- 2amritranjan@gmail.com</h5><br><h5><br>
     <source src="ep12.m4a">
   </div>
 </body>
+
+<script>
+          const menuBtn = document.querySelector('.more');
+          const menuModal = document.querySelector('.menuModal');
+          const closeBtn = document.querySelector('.back');
+          
+          menuBtn.addEventListener('click', function() {
+            menuModal.style.display = 'flex';
+          });
+          closeBtn.addEventListener('click', function() {
+            menuModal.style.display = 'none';
+          });
+          document.addEventListener('click', function(event) {
+            if (event.target == menuModal) {
+              menuModal.style.display = 'none';
+            }
+          });
+</script>
+  
 </html>
