@@ -19,5 +19,25 @@
   </div>
   </label>
     <button class="click" type="submit">Verify</button>
+
+<script>
+  const inputs = document.querySelectorAll('.otpbox input');
+
+inputs.forEach((input, index) => {
+  input.addEventListener('input', (e) => {
+    if (input.value.length === 1 && index < inputs.length - 1) {
+      inputs[index + 1].focus();
+    }
+  });
+
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Backspace' && input.value === '' && index > 0) {
+      inputs[index - 1].focus();
+    }
+  });
+});
+</script>
+
+  
 </body>
 </html>
