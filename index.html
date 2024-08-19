@@ -26,6 +26,25 @@
             </label>
           </div>
   </header>
+
+  <div id="menuModal" class="menuModal">
+    <div class="modal-content">
+    <div class="box">
+  <div class="box2"><button class="sign-in">Login</button>
+    <div class="box3"><button class="back"><i class="fa-regular fa-circle-xmark"></i></button></div>
+  </div>
+  <ul><b>
+    <li><i class="fa-solid fa-user"></i><a href="  ">  Profile   ></a></li>
+    <li><i class="fa-solid fa-sliders"></i><a href="  ">  Settings   ></a></li>
+    <li><i class="fa-solid fa-arrow-down-long"></i><a href=" ">  Downloads   ></a></li>
+    <li><i class="fa-solid fa-chart-line"></i><a href=" ">  Creator Corner   ></a></li>
+    <li><i class="fa-solid fa-unlock-keyhole"></i><a href=" ">  Try Pro   ></a></li>
+    <li> </li>
+  </b>
+      </ul>
+</div></div></div>
+
+  
     <div class="image-container">
     <img src="coverPhoto.jpg" class=" image">
       </div>
@@ -160,5 +179,25 @@ Email: <a href="mailto:2amritranjan@gmail.com">2amritranjan@gmail.com</a>
     | <a href="terms-disclaimer-url" target="_blank">Terms & Disclaimer</a> |
   </div>
 </footer>
+
+<script>
+          const menuBtn = document.querySelector('.more');
+          const menuModal = document.querySelector('.menuModal');
+          const closeBtn = document.querySelector('.back');
+          
+          menuBtn.addEventListener('click', function() {
+            menuModal.style.display = 'flex';
+          });
+          closeBtn.addEventListener('click', function() {
+            menuModal.style.display = 'none';
+          });
+          document.addEventListener('click', function(event) {
+            if (event.target == menuModal) {
+              menuModal.style.display = 'none';
+            }
+          });
+</script>
+
+  
 </body>
 </html>
